@@ -131,7 +131,7 @@ public class Canvas
             graphic.setColor(Color.yellow);
         else if(colorString.equals("green"))
             graphic.setColor(Color.green);
-        else if(colorString.equals("magenta"))
+        else if(colorString.equals("black"))
             graphic.setColor(Color.magenta);
         else if(colorString.equals("white"))
             graphic.setColor(Color.white);

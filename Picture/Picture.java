@@ -14,6 +14,15 @@ public class Picture
 {
     private Square wall;
     private Square window;
+    private Square window1;
+    private Square window2;
+    private Square window3;
+    private Square window4;
+    private Square door1;
+    private Square door2;
+    private Square treeTrunk;
+    private Square treeTrunk1;
+    private Circle tree;
     private Triangle roof;
     private Circle sun;
 
@@ -32,19 +41,74 @@ public class Picture
     {
         wall = new Square();
         wall.moveVertical(80);
-        wall.changeSize(100);
+        wall.changeSize(160);
         wall.makeVisible();
 
         window = new Square();
         window.changeColor("black");
-        window.moveHorizontal(20);
+        window.moveHorizontal(10);
         window.moveVertical(100);
         window.makeVisible();
+        
+        window1 = new Square();
+        window1.changeColor("black");
+        window1.moveHorizontal(65);
+        window1.moveVertical(100);
+        window1.makeVisible();
+        
+        window2 = new Square();
+        window2.changeColor("black");
+        window2.moveHorizontal(120);
+        window2.moveVertical(100);
+        window2.makeVisible();
+        
+        window3 = new Square();
+        window3.changeColor("black");
+        window3.moveHorizontal(10);
+        window3.moveVertical(170);
+        window3.makeVisible();
+        
+        window4 = new Square();
+        window4.changeColor("black");
+        window4.moveHorizontal(120);
+        window4.moveVertical(170);
+        window4.makeVisible();
+        
+        door1 = new Square();
+        door1.changeColor("black");
+        door1.moveHorizontal(65);
+        door1.moveVertical(180);
+        door1.makeVisible();
+        
+        door2 = new Square();
+        door2.changeColor("black");
+        door2.moveHorizontal(65);
+        door2.moveVertical(210);
+        door2.makeVisible();
+        
+        tree = new Circle();
+        tree.changeColor("green");
+        tree.moveHorizontal(210);
+        tree.moveVertical(110);
+        tree.changeSize(60);
+        tree.makeVisible();
+        
+        treeTrunk1 = new Square();
+        treeTrunk1.changeColor("black");
+        treeTrunk1.moveHorizontal(185);
+        treeTrunk1.moveVertical(180);
+        treeTrunk1.makeVisible();
+        
+        treeTrunk = new Square();
+        treeTrunk.changeColor("black");
+        treeTrunk.moveHorizontal(185);
+        treeTrunk.moveVertical(210);
+        treeTrunk.makeVisible();
 
         roof = new Triangle();
-        roof.changeSize(50, 140);
-        roof.moveHorizontal(60);
-        roof.moveVertical(70);
+        roof.changeSize(50, 160);
+        roof.moveHorizontal(90);
+        roof.moveVertical(65);
         roof.makeVisible();
 
         sun = new Circle();
